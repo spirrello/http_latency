@@ -1,1 +1,1 @@
-Python script to measure HTTP latency using Google charts.
+Python script to measure HTTP latency and display metrics using Google charts.
