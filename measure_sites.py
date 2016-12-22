@@ -40,8 +40,8 @@ def measure_sites():
     
     return site_list
 
-
-def main():
+def render_page():
+    """This method will render the HTML page for the consumer."""
 
     print ("Content-type: text/html")
     
@@ -77,6 +77,9 @@ def main():
     """
     print (web_page)
 
+def main():
+
+    render_page()
 
 
 if __name__=="__main__":
