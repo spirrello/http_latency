@@ -25,7 +25,9 @@ def measure_sites():
         
         start_time = datetime.now()
         r = requests.get(site)
-        load_time = calc_time(start_time)
+        time_difference = datetime.now() - start_time
+        load_time = (time_difference.days * 24 * 60 * 60 + time_difference.seconds) * 1000 + time_difference.microseconds / 1000.0
+        #load_time = calc_time(start_time)
         #print(site + " loaded in " + str(load_time) + " ms")
         #Need to clean up the sites list.
         sites[x] = sites[x].replace("http://", "")
